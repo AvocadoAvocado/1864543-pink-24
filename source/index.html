@@ -98,7 +98,7 @@
                 познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </div>
-          <p class="__toggles slider__toggles">
+          <p class="reviews__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--current" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
@@ -106,7 +106,7 @@
         </div>
       </section>
       <section class="price">
-        <div class="price__wrapper">
+        <div class="price__wrapper" slider>
           <dl class="price__list">
             <div class="price__title">
               <dd class="price__description">Розовый фильтр</dd>
@@ -138,7 +138,7 @@
               </dd>
             </div>
 
-            <div class="price__item">
+            <div class="price__item slider__list">
               <dt>
                 <span>стандарт</span>
                 <span>3,99 USD</span>
@@ -189,24 +189,32 @@
               </dd>
             </div>
           </dl>
+          <p class="price__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
         </div>
       </section>
-    </main>
-    <footer class="page-footer">
-      <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-      <p class="contacts__text">
-        <b class="contacts__title">Звоните:</b>
-        <a class="contacts__phone" href="tel:+78125556666">
-          <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
-        </a>
-        <b class="contacts__title">Пишите:</b>
-        <a class="contacts__mail">
-          <span class="contacts__mail-mobile"></span> mail@htmlacademy.ru
+      <section class="search">
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <p class="contacts__text">
+          <b class="contacts__title">Звоните:</b>
+          <a class="contacts__phone" href="tel:+78125556666">
+            <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
+          </a>
+          <b class="contacts__title">Пишите:</b>
+          <a class="contacts__mail">
+            <span class="contacts__mail-mobile"></span> mail@htmlacademy.ru
 
-        </a>
-        <b class="contacts__title">Приезжайте в гости:</b>
-        ул. Большая Конюшенная, 19/8
-      </p>
+          </a>
+          <b class="contacts__title">Приезжайте в гости:</b>
+          ул. Большая Конюшенная, 19/8
+        </p>
+      </section>
+    </main>
+
+    <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a class="page-footer__link" href="https://htmlacademy.ru/">
@@ -216,8 +224,18 @@
               alt="Приложение «pink»">
           </a>
         </div>
-        <div class="page-footer__social">
-        </div>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--tw" href="https://twitter.com/htmlacademy">Мы в Твитере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">Мы в
+              Ютубе</a>
+          </li>
+        </ul>
         <div class="page-footer__copyright">
         </div>
       </div>
