@@ -11,32 +11,37 @@
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-text.svg" width="74" height="23" alt="Приложение «pink»">
+        <img class="page-header__logo-image" src="img/logotype-image.svg" width="59" height="40"
+          alt="Логотип приложения пинк">
+        <img class="page-header__logo-text" src="img/logotype-text.svg" width="74" height="23"
+          alt="Логотип приложения пинк">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__ toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="" href="index.html">главная</a>
-          </li>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="" href="index.html">главная</a>
+            </li>
 
-          <li class="main-nav__item">
-            <a class="" href="photo.html">фотографии</a>
-          </li>
+            <li class="main-nav__item">
+              <a class="" href="catalog.html">фотографии</a>
+            </li>
 
-          <li class="main-nav__item">
-            <a class="" href="contest.html">конкурс</a>
-          </li>
+            <li class="main-nav__item">
+              <a class="" href="form.html">конкурс</a>
+            </li>
 
-          <li class="main-nav__item">
-            <a class="" href="#">html academy</a>
-          </li>
-        </ul>
+            <li class="main-nav__item">
+              <a class="" href="#">html academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="page-main">
+      <h1 class="visually-hidden">Приложение «Пинк» - взгляни на мир по-новому</h1>
       <section class="invite">
-        <h1 class="visually-hidden">Приложение «Пинк» - взгляни на мир по-новому</h1>
         <h2 class="invite__title">Взгляните на жизнь иначе!</h2>
         <button class="invite__button" type="button">cкачать приложение</button>
         <p class="invite__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -98,6 +103,92 @@
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
           </p>
+        </div>
+      </section>
+      <section class="price">
+        <div class="price__wrapper">
+          <dl class="price__list">
+            <div class="price__title">
+              <dd class="price__description">Розовый фильтр</dd>
+              <dd class="price__description">Смайлики</dd>
+              <dd class="price__description">Комментарии</dd>
+            </div>
+            <div class="price__item">
+              <dt>
+                <span>база</span>
+                <span>1,99 USD</span>
+              </dt>
+              <dd class="price__availability">
+                <svg width="31" height="21">
+                  <use></use>
+                </svg>
+                <span class="visually-hidden">Да</span>
+              </dd>
+              <dd class="price__availability">
+                <svg width="27" height="27">
+                  <use></use>
+                </svg>
+                <span class="visually-hidden">Нет</span>
+              </dd>
+              <dd class="price__availability">
+                <svg width="27" height="27">
+                  <use></use>
+                </svg>
+                <span class="visually-hidden">Нет</span>
+              </dd>
+            </div>
+
+            <div class="price__item">
+              <dt>
+                <span>стандарт</span>
+                <span>3,99 USD</span>
+                <span>хит</span>
+              </dt>
+              <dd class="price__availability">
+                <svg width="31" height="21">
+                  <use></use>
+                </svg>
+                <span class="visually-hidden">Да</span>
+              </dd>
+              <dd class="price__availability">
+                <svg width="31" height="21">
+                  <use></use>
+                </svg>
+                <span class="visually-hidden">Да</span>
+              </dd>
+              <dd class="price__availability">
+                <svg width="27" height="27">
+                  <use></use>
+                </svg>
+                <span class="visually-hidden">Нет</span>
+              </dd>
+            </div>
+
+            <div class="price__item">
+              <dt>
+                <span>анлим</span>
+                <span>9,99 USD</span>
+              </dt>
+              <dd class="price__availability">
+                <svg width="31" height="21">
+                  <use></use>
+                </svg>
+                <span class="visually-hidden">Да</span>
+              </dd>
+              <dd class="price__availability">
+                <svg width="31" height="21">
+                  <use></use>
+                </svg>
+                <span class="visually-hidden">Да</span>
+              </dd>
+              <dd class="price__availability">
+                <svg width="31" height="21">
+                  <use></use>
+                </svg>
+                <span class="visually-hidden">Да</span>
+              </dd>
+            </div>
+          </dl>
         </div>
       </section>
     </main>
