@@ -5,11 +5,6 @@
   background-repeat: no-repeat;
 }
 
-.page-header__container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .invite__title {
   font-weight: 300;
   font-size: 24px;
@@ -19,10 +14,11 @@
 .invite__button {
   color: #ffffff;
   border: 3px solid #ffffff;
+  padding: 14px 90px;
 }
 
 .nav-link {
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-face;
   line-height: 32px;
   font-weight: 700;
   text-align: center;

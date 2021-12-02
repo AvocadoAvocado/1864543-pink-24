@@ -1,0 +1,19 @@
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social__link {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.copyright__text {
+  line-height: 18px;
+}
+
+.page-footer__copyright {
+  display: flex;
+}
