@@ -1,1 +1,6 @@
-@import "global/global.sass";
+//Globals
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "header.scss";
+@import "main.scss";
+@import "footer.scss";

@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/opensans.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #ffffff;
+  color: #283645;
+}
+
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  color: #d22856;
+  background-color: transparent;
+  cursor: pointer;
+  border: 3px solid #d22856;
+  border-radius: 30px;
+  padding: 21px 90px;
+
+}
