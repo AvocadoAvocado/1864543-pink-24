@@ -1,7 +1,10 @@
+@import "form.scss";
+
 .offer__title {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+  text-align: center;
 }
 
 .offer__subtitle {
@@ -82,4 +85,11 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
+}
+
+.content__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
 }
