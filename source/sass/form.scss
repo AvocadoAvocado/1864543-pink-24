@@ -19,12 +19,10 @@
   padding: 55px 0;
 }
 
-.filter__row {
-  background-color: #f2f2f2;
-}
-
-.filter__item {
-  padding-top: 10px;
+.achievements {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .filter__title {
@@ -33,6 +31,20 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #d22856;
+}
+
+.filter__row {
+  background-color: #f2f2f2;
+}
+
+.filter__item {
+  padding-top: 10px;
+}
+
+.apps {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;;
 }
 
 .contacts__group {
