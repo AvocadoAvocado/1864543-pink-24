@@ -1,13 +1,15 @@
-.social__list {
-  display: flex;
-  flex-wrap: wrap;
-}
+.social {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.social__link {
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  text-align: center;
+  &__link {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+  }
 }
 
 .copyright__text {

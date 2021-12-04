@@ -1,12 +1,26 @@
 @font-face {
   font-family: "Open Sans";
   src: url("../../fonts/opensans.woff2") format("woff2");
-  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/opensansbold.woff2") format("woff2");
+  font-weight: $font-bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/opensanslight.woff2") format("woff2");
+  font-weight: $font-light;
+  font-style: normal;
 }
 
 body {
   margin: 0 auto;
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-face;
   font-size: 14px;
   line-height: 24px;
   background-color: #ffffff;
@@ -19,7 +33,7 @@ body {
   font-family: inherit;
   font-size: 18px;
   text-align: center;
-  font-weight: 700;
+  font-weight: $font-bold;
   color: #d22856;
   background-color: transparent;
   cursor: pointer;

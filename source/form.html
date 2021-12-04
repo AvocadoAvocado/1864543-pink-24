@@ -46,174 +46,180 @@
     <section class="content">
       <p class="content__text clean">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
         бонусную карту!</p>
-
-    <form class="contest__form" action="https://echo.htmlacademy.ru/" method="post">
-      <fieldset class="name-user clean">
-        <p class="field-group contest__form-first clean">
-          <label class="form-label clean" for="contest--first">
-            Фамилия:
-          </label>
-          <input class="field clean" type="text" id="contest--first" name="contest--first" required
-            placeholder="Укажите фамилию *">
-        </p>
-
-        <p class="field-group contest__form-middle clean">
-          <label class="form-label clean" for="contest--middle">
-            Имя:
-          </label>
-          <input class="field clean" type="text" id="contest--middle" name="contest--middle" required
-            placeholder="Введите ваше имя *">
-        </p>
-
-        <p class="field-group contest__form-last clean">
-          <label class="form-label clean" for="contest--last">
-            Отчество:
-          </label>
-          <input class="field clean" type="text" id="contest--last" name="contest--last" placeholder="Ну и отчество тоже">
-        </p>
-      </fieldset>
-
-      <fieldset class="filter__row clean">
-        <legend class="filter__title">Ваши безбашенные достижения в путешествии</legend>
-        <ul class="filter__list clean">
-          <li class="filter__item">
-            <label class="achievements clean">
-              <input class="visually-hidden achievements__input clean" type="checkbox" name="shark" checked>Сделал селфи
-              с
-              акулой
-              <span class="achievements__mark"></span>
+      <form class="contest-form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="contest-form__name-user clean">
+          <p class="contest-form--first clean">
+            <label class="contest-form__form-label clean" for="contest--first">
+              Фамилия:
             </label>
-          </li>
+            <input class="contest-form__field clean" type="text" id="contest--first" name="contest--first" required
+              placeholder="Укажите фамилию *">
+          </p>
 
-          <li class="filter__item">
-            <label class="achievements clean">
-              <input class="visually-hidden achievements__input clean" type="checkbox" name="beach" checked>Обгорел на
-              пляже
-              <span class="achievements__mark"></span>
+          <p class="contest-form--middle clean">
+            <label class="contest-form__form-label clean" for="contest--middle">
+              Имя:
             </label>
-          </li>
+            <input class="contest-form__field clean" type="text" id="contest--middle" name="contest--middle" required
+              placeholder="Введите ваше имя *">
+          </p>
 
-          <li class="filter__item">
-            <label class="achievements clean">
-              <input class="visually-hidden achievements__input clean" type="checkbox" name="Chuck Norris">Видел Чака
-              Норриса
-              <span class="achievements__mark"></span>
+          <p class="contest-form--last clean">
+            <label class="contest-form__form-label clean" for="contest--last">
+              Отчество:
             </label>
-          </li>
+            <input class="contest-form__field clean" type="text" id="contest--last" name="contest--last"
+              placeholder="Ну и отчество тоже">
+          </p>
+        </fieldset>
 
-          <li class="filter__item">
-            <label class="achievements clean">
-              <input class="visually-hidden achievements__input clean" type="checkbox" name="souvenirs">Накупил
-              сувениров
-              <span class="achievements__mark"></span>
-            </label>
-          </li>
-
-          <li class="filter__item">
-            <label class="achievements clean">
-              <input class="visually-hidden achievements__input clean" type="checkbox" name="tower" checked>Удержал
-              башню
-              <span class="achievements__mark"></span>
-            </label>
-          </li>
-
-          <li class="filter__item">
-            <label class="achievements clean">
-              <input class="visually-hidden achievements__input clean" type="checkbox" name="hotel">Разгромил отель
-              <span class="achievements__mark"></span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-
-      <fieldset class="contacts__group clean">
-        <p class="field-group contacts__form--phone clean">
-          <label class="form-label clean" for="contacts--phone">
-            Номер телефона
-          </label>
-          <input class="field clean" type="text" id="contacts--phone" name="contacts--phone" placeholder="Номер, пожалуйста">
-        </p>
-
-        <p class="field-group contacts__form--mail clean">
-          <label class="form-label clean" for="contacts--mail">
-            Адрес почты
-          </label>
-          <input class="field clean" type="text" id="contacts--mail" name="contacts--mail" required
-            placeholder="Введите почту *">
-        </p>
-      </fieldset>
-
-      <fieldset class="filter__row clean">
-        <legend class="filter__title">С каким приложением путешествовали?</legend>
-        <ul class="filter__list clean">
-          <li class="filter__item">
-            <label class="apps clean">
-              <input class="visually-hidden apps__input clean" type="radio" value="iOS" checked>Pink для iOS
-              <span class="apps__mark"></span>
-            </label>
-          </li>
-
-          <li class="filter__item">
-            <label class="apps clean">
-              <input class="visually-hidden apps__input clean" type="radio" value="Android">Pink на Android
-              <span class="apps__mark"></span>
-            </label>
-          </li>
-
-          <li class="filter__item">
-            <label class="apps clean">
-              <input class="visually-hidden apps__input clean" type="radio" value="WindowsPhone">Windows Phone
-            </label>
-          </li>
-      </fieldset>
-
-      <fieldset class="feeling__group clean">
-        <legend class="feeling__title">Опишите свои эмоции</legend>
-        <label class="visually-hidden clean" for="feeling">Опишите свои эмоции</label>
-        <textarea class="feeling__text clean" id="feeling" name="feeling" rows="5" cols="40">Можно прям в красках, не стесняясь в выражениях</textarea>
-      </fieldset>
-      <button class="contest__button clean" type="submit">Отправить форму</button>
-      <p class="contest__text clean"><span class="contest__text contest__symbol">*</span> — обязательные поля</p>
-
-      <footer class="page-footer">
-        <div class="page-footer__wrapper">
-          <div class="page-footer__logo">
-            <a class="page-footer__link clean" href="https://htmlacademy.ru/">
-              <img class="page-footer__link-image" src="img/mobile/footer/logotype-image.svg" alt="Логотип приложения пинк" width="59"
-                height="40">
-              <img class="page-footer__link-text" src="img/mobile/footer/logotype-text.svg" width="74" height="23"
-                alt="Приложение «pink»">
-            </a>
-          </div>
-          <ul class="social__list clean">
-            <li class="social__item">
-              <a class="social__link social__link--tw clean" href="https://twitter.com/htmlacademy">
-                <svg></svg>
-                <span>Мы в Твитере</span>
-              </a>
+        <fieldset class="filter__row clean">
+          <legend class="filter__title">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="filter__list clean">
+            <li class="filter__item">
+              <label class="achievements clean">
+                <input class="visually-hidden achievements__input clean" type="checkbox" name="shark" checked>Сделал
+                селфи
+                с
+                акулой
+                <span class="achievements__mark"></span>
+              </label>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook clean" href="https://www.facebook.com/htmlacademy">
-                <svg></svg>
-                <span>Мы в Фейсбуке</span>
-              </a>
+
+            <li class="filter__item">
+              <label class="achievements clean">
+                <input class="visually-hidden achievements__input clean" type="checkbox" name="beach" checked>Обгорел на
+                пляже
+                <span class="achievements__mark"></span>
+              </label>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube clean" href="https://www.youtube.com/c/HTMLAcademyRUS">
-                <svg></svg>
-                <span>Мы в Ютубе</span>
-             </a>
+
+            <li class="filter__item">
+              <label class="achievements clean">
+                <input class="visually-hidden achievements__input clean" type="checkbox" name="Chuck Norris">Видел Чака
+                Норриса
+                <span class="achievements__mark"></span>
+              </label>
+            </li>
+
+            <li class="filter__item">
+              <label class="achievements clean">
+                <input class="visually-hidden achievements__input clean" type="checkbox" name="souvenirs">Накупил
+                сувениров
+                <span class="achievements__mark"></span>
+              </label>
+            </li>
+
+            <li class="filter__item">
+              <label class="achievements clean">
+                <input class="visually-hidden achievements__input clean" type="checkbox" name="tower" checked>Удержал
+                башню
+                <span class="achievements__mark"></span>
+              </label>
+            </li>
+
+            <li class="filter__item">
+              <label class="achievements clean">
+                <input class="visually-hidden achievements__input clean" type="checkbox" name="hotel">Разгромил отель
+                <span class="achievements__mark"></span>
+              </label>
             </li>
           </ul>
-          <div class="page-footer__copyright copyright">
-            <p class="copyright__text clean">Разработано:</p>
-            <a class="copyright__link clean" href="https://htmlacademy.ru/intensive/adaptive">
-              <svg></svg>
-              <span>Html Academy</span>
-            </a>
-          </div>
-        </div>
-      </footer>
+        </fieldset>
+
+        <fieldset class="contest-form__contacts-user clean">
+          <p class="contest-form--phone clean">
+            <label class="contest-form__form-label clean" for="contacts--phone">
+              Номер телефона
+            </label>
+            <input class="contest-form__field clean" type="text" id="contacts--phone" name="contacts--phone"
+              placeholder="Номер, пожалуйста">
+          </p>
+
+          <p class="contest-form--mail clean">
+            <label class="contest-form__form-label clean" for="contacts--mail">
+              Адрес почты
+            </label>
+            <input class="contest-form__field clean" type="text" id="contacts--mail" name="contacts--mail" required
+              placeholder="Введите почту *">
+          </p>
+        </fieldset>
+
+        <fieldset class="filter__row clean">
+          <legend class="filter__title">С каким приложением путешествовали?</legend>
+          <ul class="filter__list clean">
+            <li class="filter__item">
+              <label class="filter__apps clean">
+                <input class="visually-hidden apps__input clean" type="radio" value="iOS" checked>Pink для iOS
+                <span class="apps__mark"></span>
+              </label>
+            </li>
+
+            <li class="filter__item">
+              <label class="filter__apps clean">
+                <input class="visually-hidden apps__input clean" type="radio" value="Android">Pink на Android
+                <span class="apps__mark"></span>
+              </label>
+            </li>
+
+            <li class="filter__item">
+              <label class="filter__apps clean">
+                <input class="visually-hidden apps__input clean" type="radio" value="WindowsPhone">Windows Phone
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="feeling__group clean">
+          <legend class="feeling__title">Опишите свои эмоции</legend>
+          <label class="visually-hidden clean" for="feeling">Опишите свои эмоции</label>
+          <textarea class="feeling__text clean" id="feeling" name="feeling" rows="5"
+            cols="40">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </fieldset>
+        <button class="contest__button clean" type="submit">Отправить форму</button>
+        <p class="contest__text clean"><span class="contest__text contest__symbol">*</span> — обязательные поля</p>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <a class="page-footer__link clean" href="https://htmlacademy.ru/">
+          <img class="page-footer__link-image" src="img/mobile/footer/logotype-image.svg" alt="Логотип приложения пинк"
+            width="59" height="40">
+          <img class="page-footer__link-text" src="img/mobile/footer/logotype-text.svg" width="74" height="23"
+            alt="Приложение «pink»">
+        </a>
+      </div>
+      <ul class="social__list clean">
+        <li class="social__item">
+          <a class="social__link social__link--tw clean" href="https://twitter.com/htmlacademy">
+            <svg></svg>
+            <span>Мы в Твитере</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook clean" href="https://www.facebook.com/htmlacademy">
+            <svg></svg>
+            <span>Мы в Фейсбуке</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube clean" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <svg></svg>
+            <span>Мы в Ютубе</span>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text clean">Разработано:</p>
+        <a class="copyright__link clean" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg></svg>
+          <span>Html Academy</span>
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

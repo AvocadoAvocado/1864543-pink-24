@@ -3,30 +3,33 @@
   background: #1d2631;
   background-image: url("../img/mobile/header/back-mobile.png");
   background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.page-header__container {
-  display: flex;
-  justify-content: space-between;
-}
+.invite {
+  &__title {
+    font-weight: $font-light;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
 
-.invite__title {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: center;
-}
-
-.invite__button {
-  color: #ffffff;
-  border: 3px solid #ffffff;
-  padding: 14px 90px;
+  &__button {
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    padding: 14px 90px;
+  }
 }
 
 .nav-link {
   font-family: $font-face;
   line-height: 32px;
-  font-weight: 700;
+  font-weight: $font-bold;
   text-align: center;
   color: #ffffff;
   text-decoration: none;
