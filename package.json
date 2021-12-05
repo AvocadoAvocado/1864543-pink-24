@@ -39,5 +39,8 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "editorconfig-cli": "^0.3.0"
+  }
 }

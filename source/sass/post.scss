@@ -1,0 +1,14 @@
+.post {
+  &__text {
+    line-height: 30px;
+  }
+
+  &__button-reset {
+    display: block;
+    padding: 15px 103px 15px 104px;
+    border-radius: 30px;
+    border: 3px solid #283645;
+    opacity: 10%;
+    color: #c2c5c9;
+  }
+}

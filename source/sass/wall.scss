@@ -1,0 +1,24 @@
+.wall {
+  &__item {
+    background-color: $base-bg-color;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__time {
+    font-weight: $font-light;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  &__button-descr {
+    font-weight: $font-normal;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #d22856;
+  }
+}
