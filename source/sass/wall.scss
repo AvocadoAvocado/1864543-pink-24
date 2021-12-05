@@ -1,6 +1,6 @@
 .wall {
   &__item {
-    background-color: #f2f2f2;
+    background-color: $base-bg-color;
   }
 
   &__container {
@@ -14,26 +14,11 @@
     text-transform: uppercase;
   }
 
-  &__nike {
+  &__button-descr {
     font-weight: $font-normal;
     font-size: 12px;
     line-height: 24px;
     text-transform: uppercase;
     color: #d22856;
-  }
-}
-
-.post {
-  &__text {
-    line-height: 30px;
-  }
-
-  &__button-reset {
-    display: block;
-    padding: 15px 103px 15px 104px;
-    border-radius: 30px;
-    border: 3px solid #283645;
-    opacity: 10%;
-    color: #283645;
   }
 }

@@ -19,57 +19,7 @@
     border: 2px solid #e5e5e5;
     padding: 23px 78px 23px 20px;
   }
-}
 
-.achievements {
-  font-weight: $font-normal;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.filter {
-  &__row {
-    background-color: #f2f2f2;
-  }
-
-  &__title {
-    font-weight: $font-normal;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: #d22856;
-  }
-
-  &__item {
-    padding-top: 10px;
-  }
-
-  &__apps {
-    font-weight: $font-normal;
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
-.feeling {
-  &__title {
-    font-weight: $font-normal;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: #d22856;
-  }
-
-  &__text {
-    border: 2px solid #e5e5e5;
-    font-weight: $font-normal;
-    font-size: 18px;
-    line-height: 30px;
-    padding: 22px 20px;
-  }
-}
-
-.contest {
   &__button {
     background-color: #2aab6d;
     color: #ffffff;
@@ -89,5 +39,43 @@
 
   &__symbol {
     color: #d22856;
+  }
+
+  &__row {
+    background-color: $base-bg-color;
+  }
+
+  &__title {
+    font-weight: $font-normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #d22856;
+  }
+
+  &__item {
+    padding-top: 10px;
+  }
+
+  &__apps {
+    font-weight: $font-normal;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__feeling-title {
+    font-weight: $font-normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #d22856;
+  }
+
+  &__feeling-text {
+    border: 2px solid #e5e5e5;
+    font-weight: $font-normal;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 22px 20px;
   }
 }
