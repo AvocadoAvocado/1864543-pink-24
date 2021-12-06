@@ -1,6 +1,6 @@
 .wall {
   &__item {
-    background-color: $base-bg-color;
+    background-color: $lightgrey;
   }
 
   &__container {
@@ -19,6 +19,6 @@
     font-size: 12px;
     line-height: 24px;
     text-transform: uppercase;
-    color: #d22856;
+    color: $pink;
   }
 }
