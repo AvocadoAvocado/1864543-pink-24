@@ -1,10 +1,19 @@
 .reviews {
+  text-align: center;
   &__author-name {
     font-style: normal;
     font-weight: $font-bold;
     font-size: 18px;
     line-height: 30px;
     color: #000000;
+  }
+
+  &__item {
+    padding: 50px 0 40px 0;
+  }
+
+  &__item-desc {
+    display: block;
   }
 
   &__text {

@@ -9,6 +9,7 @@
     font-weight: $font-light;
     font-size: 24px;
     line-height: 29px;
+    margin-bottom: 45px;
   }
 
   &__subtitle {
@@ -16,5 +17,14 @@
     font-weight: $font-bold;
     font-size: 18px;
     line-height: 24px;
+    margin: 31px 0 13px;
+  }
+
+  &__link {
+    color: $pink;
+    font-style: normal;
+    font-weight: $font-light;
+    font-size: 24px;
+    line-height: 33px;
   }
 }
