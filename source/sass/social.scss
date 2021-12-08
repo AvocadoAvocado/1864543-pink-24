@@ -1,0 +1,13 @@
+.social {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+  }
+}

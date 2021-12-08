@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/opensans.woff2") format("woff2");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/opensansbold.woff2") format("woff2");
+  font-weight: $font-bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/opensanslight.woff2") format("woff2");
+  font-weight: $font-light;
+  font-style: normal;
+}
+
+body {
+  margin: 0 auto;
+  font-family: $font-face;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #ffffff;
+  color: #283645;
+}
+
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 18px;
+  text-align: center;
+  font-weight: $font-bold;
+  color: #d22856;
+  background-color: transparent;
+  cursor: pointer;
+  border: 3px solid #d22856;
+  border-radius: 57px;
+  padding: 21px 90px;
+}
+
+.clean {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
