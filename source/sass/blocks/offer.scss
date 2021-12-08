@@ -22,6 +22,7 @@
     font-size: 18px;
     line-height: 24px;
     color: #000000;
+    margin-bottom: 24px;
   }
 
   &__list {
@@ -32,7 +33,23 @@
     margin: 43px;
   }
 
-  &__subtitle {
-    margin-bottom: 24px;
+  &__image-container {
+    position: relative;
+
+    /*&::before {
+      content: "";
+      background-image: url("../img/mobile/main/iphone.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 55px;
+      right: 44%;
+      width: 157px;
+      height: 320px;
+      z-index: 1;
+    }*/
+  }
+
+  &__image-content {
+    z-index: 2;
   }
 }
