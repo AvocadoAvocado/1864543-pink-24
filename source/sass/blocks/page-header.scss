@@ -2,22 +2,69 @@
   color: #ffffff;
   background-color: #1d2631;
   position: relative;
+  @media (min-width: $tablet-width) {
+    height: 729px;
+  }
 
   &__container-image {
-    border: 3px solid #f84e4e;
+    //border: 3px solid #f84e4e;
+    background-repeat: no-repeat;
     width: 286px;
     height: 320px;
-    margin: -3px;
+    //margin: -3px;
     position: absolute;
-    bottom: 281px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 160px;
+    left: 0;
     z-index: 1;
+
     @media (min-width: $tablet-width) {
+      width: auto;
+      height: 545px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: auto;
+    }
+
+    &::before {
+      content: "";
+      background-image: url("../img/mobile/header/screen.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 57px;
+      right: 0;
+      left: 105px;
+      height: 197px;
+      z-index: 0;
+
+      @media (min-width: $tablet-width) {
+        content: "";
+        background-image: url("../img/tablet/header/screen.png");
+        height: 346px;
+        background-position: 100% 0;
+        position: absolute;
+        bottom: 146px;
+        right: 95px;
+      }
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../img/mobile/header/phone.png");
+      background-repeat: no-repeat;
       position: absolute;
       bottom: 0;
-      left: 79%;
-      transform: translateX(-50%);
+      right: 0;
+      left: 0;
+      height: 286px;
+      z-index: 1;
+
+      @media (min-width: $tablet-width) {
+        content: "";
+        background-image: url("../img/tablet/header/phone.png");
+        background-position: 100% 0;
+        height: 545px;
+      }
     }
   }
 
@@ -28,6 +75,7 @@
     border: 3px solid #f34d4d;
     margin: -3px;
     position: relative;
+    z-index: 3;
 
     /* @media (min-width: $tablet-width) {
       background-image: url("../img/tablet/header/back tablet.png");
