@@ -1,15 +1,35 @@
 .page-header {
   color: #ffffff;
   background-color: #1d2631;
+  position: relative;
+
+  &__container-image {
+    border: 3px solid #f84e4e;
+    width: 286px;
+    height: 320px;
+    margin: -3px;
+    position: absolute;
+    bottom: 281px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      bottom: 0;
+      left: 79%;
+      transform: translateX(-50%);
+    }
+  }
 
   &__wrapper {
-    background-image: url("../img/mobile/header/back-mobile.png");
+    //background-image: url("../img/mobile/header/back-mobile.png");
     background-repeat: no-repeat;
     background-position: 50% 0;
-    height: 462px;
+    border: 3px solid #f34d4d;
+    margin: -3px;
     position: relative;
 
-    @media (min-width: $tablet-width) {
+    /* @media (min-width: $tablet-width) {
       background-image: url("../img/tablet/header/back tablet.png");
       height: 729px;
     }
@@ -24,6 +44,7 @@
       right: 0;
       left: 0;
       height: 197px;
+      z-index: 0;
 
       @media (min-width: $tablet-width) {
         content: "";
@@ -47,6 +68,7 @@
       right: 0;
       left: 0;
       height: 286px;
+      z-index: 1;
 
       @media (min-width: $tablet-width) {
         content: "";
@@ -58,10 +80,12 @@
         bottom: 0;
         right: 0;
       }
-    }
+    }*/
   }
 
-  &__container {
+  &__container-nav {
+    border: 3px solid #95db23;
+    margin: -3px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,26 +104,43 @@
     }
   }
 
+  &__container-content {
+    border: 3px solid #ff2fba;
+    margin: -3px;
+    padding: 0 20px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 300px;
+    }
+  }
+
+  &__container-download {
+    border: 3px solid #2b8ac9;
+    margin: -3px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 28px 0 38px 0;
+    text-align: center;
+    z-index: 3;
+  }
+
   &__title {
     font-weight: $font-light;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
     padding: 0 20px;
-  }
-
-  &__download {
-    background-color: #1d2631;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 28px 20px 38px 20px;
-    text-align: center;
+    margin-bottom: 348px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &__button {
     color: #ffffff;
     border: 3px solid #ffffff;
+    margin: -3px;
     padding: 14px 0;
 
   }
