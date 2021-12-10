@@ -1,7 +1,42 @@
 .research {
   display: none;
+
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 328px;
+    position: relative;
+    padding: 0 20px;
+
+    &__content {
+      color: $pink;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 163px;
+      position: relative;
+      width: 238px;
+      height: 278px;
+      padding-top: 24px;
+      &::before {
+        content: "";
+        background-image: url("../img/tablet/main/timer.svg");
+        position: absolute;
+        background-repeat: no-repeat;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-position: 50% 50%;
+      }
+    }
+
+    &__container-content {
+      width: 310px;
+    }
 
     &__title {
       font-weight: 700;

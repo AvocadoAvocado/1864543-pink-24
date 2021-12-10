@@ -1,5 +1,10 @@
 .reviews {
   text-align: center;
+
+  &__list {
+    padding: 0 20px;
+  }
+
   &__author-name {
     font-style: normal;
     font-weight: $font-bold;
@@ -29,12 +34,25 @@
     }
   }
 
+  &__author-name {
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+    }
+  }
+
+  &__item-desc {
+    @media (min-width: $tablet-width) {
+      line-height: 30px;
+    }
+  }
+
   &__text {
     font-weight: $font-normal;
     font-size: 14px;
     line-height: 30px;
     @media (min-width: $tablet-width) {
       order: 1;
+      font-size: 18px;
     }
   }
 }
