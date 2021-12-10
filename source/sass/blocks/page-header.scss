@@ -215,5 +215,8 @@
 
   &__text {
     color: #ffffff;
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+    }
   }
 }
