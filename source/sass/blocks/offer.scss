@@ -50,7 +50,7 @@
   }
 
   &__list {
-    padding: 23px 0 27px 0;
+    padding: 23px 20px 27px;
     @media (min-width: $tablet-width) {
       width: 349px;
       order: 2;
@@ -58,7 +58,7 @@
   }
 
   &__item {
-    margin: 43px;
+    margin: 43px 0;
     @media (min-width: $tablet-width) {
      margin: 23px 0 0 0;
     }

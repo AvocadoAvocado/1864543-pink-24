@@ -2,7 +2,10 @@
   color: #ffffff;
   background-color: #1d2631;
   position: relative;
+  background-image: url("../img/mobile/header/back-mobile.png");
+  background-repeat: no-repeat;
   @media (min-width: $tablet-width) {
+    background-image: url("../img/tablet/header/back tablet.png");
     height: 729px;
   }
 

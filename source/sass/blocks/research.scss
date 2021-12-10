@@ -21,6 +21,7 @@
       width: 238px;
       height: 278px;
       padding-top: 24px;
+
       &::before {
         content: "";
         background-image: url("../img/tablet/main/timer.svg");
@@ -31,6 +32,18 @@
         right: 0;
         bottom: 0;
         background-position: 50% 50%;
+      }
+
+      &::after {
+        content: "";
+        background-image: url("../img/tablet/main/diagram-fill.svg");
+        position: absolute;
+        background-repeat: no-repeat;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-position: 50% 70%;
       }
     }
 
