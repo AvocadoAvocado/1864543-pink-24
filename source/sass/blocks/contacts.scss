@@ -15,8 +15,16 @@
     right: 0;
     left: 0;
     width: 1200px;
-    height: 123px;
+    height: 40px;
     z-index: 0;
+    background-position: 0 100%;
+
+    @media (min-width: $tablet-width) {
+      content: "";
+      background-image: url("../img/tablet/main/triangle white footer.svg");
+      width: 1200px;
+      height: 68px;
+    }
   }
 
   &__text {
@@ -30,6 +38,7 @@
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 45px;
+
     @media (min-width: $tablet-width) {
       margin: 0 145px;
       width: 370px;
@@ -52,5 +61,29 @@
     font-weight: $font-light;
     font-size: 24px;
     line-height: 33px;
+  }
+
+  &__container-map {
+    &::before {
+      content: "";
+      background-image: url("../img/mobile/main/map.png");
+      background-repeat: no-repeat;
+      background-position: 0 100%;
+      position: absolute;
+      right: 0;
+      left: 0;
+      width: 320px;
+      height: 200px;
+      z-index: 0;
+
+      @media (min-width: $tablet-width) {
+        content: "";
+        background-image: url("../img/tablet/main/map.png");
+        background-repeat: no-repeat;
+        background-position: 0 100%;
+        width: 660px;
+        height: 374px;
+      }
+    }
   }
 }

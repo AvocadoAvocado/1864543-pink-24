@@ -11,10 +11,15 @@
     font-size: 18px;
     line-height: 30px;
     color: #000000;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+    }
   }
 
   &__item {
     padding: 50px 0 40px 0;
+
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: column;
@@ -23,8 +28,10 @@
 
   &__item-desc {
     display: none;
+
     @media (min-width: $tablet-width) {
       display: block;
+      line-height: 30px;
     }
   }
 
@@ -34,22 +41,11 @@
     }
   }
 
-  &__author-name {
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-    }
-  }
-
-  &__item-desc {
-    @media (min-width: $tablet-width) {
-      line-height: 30px;
-    }
-  }
-
   &__text {
     font-weight: $font-normal;
     font-size: 14px;
     line-height: 30px;
+
     @media (min-width: $tablet-width) {
       order: 1;
       font-size: 18px;

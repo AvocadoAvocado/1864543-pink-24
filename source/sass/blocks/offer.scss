@@ -51,6 +51,7 @@
 
   &__list {
     padding: 23px 20px 27px;
+
     @media (min-width: $tablet-width) {
       width: 349px;
       order: 2;
@@ -59,8 +60,9 @@
 
   &__item {
     margin: 43px 0;
+
     @media (min-width: $tablet-width) {
-     margin: 23px 0 0 0;
+      margin: 23px 0 0 0;
     }
   }
 
@@ -98,6 +100,7 @@
       height: 283px;
       right: 0;
       left: 0;
+
       @media (min-width: $tablet-width) {
         background-image: url("../img/tablet/main/iphone 3.png");
         height: 547px;
@@ -112,5 +115,4 @@
       height: 543px;
     }
   }
-
 }
