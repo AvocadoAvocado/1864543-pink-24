@@ -29,6 +29,15 @@
 
   &__text {
     z-index: 3;
+
+    @media (min-width: $tablet-width) {
+      display: inline-block;
+      width: 277px;
+
+      &:nth-child(odd) {
+        padding-left: 52px;
+      }
+    }
   }
 
   &__title {
