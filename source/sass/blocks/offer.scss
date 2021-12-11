@@ -26,6 +26,11 @@
       line-height: 55px;
       padding: 0 24px;
     }
+
+    @media (min-width: $desktop-width) {
+      font-size: 50px;
+      line-height: 68px;
+    }
   }
 
   &__title-column {
@@ -49,12 +54,26 @@
     }
   }
 
+  &__container-content {
+    @media (min-width: $desktop-width) {
+      padding: 0 252px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   &__list {
     padding: 23px 20px 27px;
 
     @media (min-width: $tablet-width) {
       width: 349px;
       order: 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 696px;
+      display: flex;
+      flex-direction: row;
     }
   }
 
@@ -63,6 +82,10 @@
 
     @media (min-width: $tablet-width) {
       margin: 23px 0 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 46px;
     }
   }
 
@@ -89,6 +112,14 @@
         right: 0;
         left: 0;
       }
+
+      @media (min-width: $desktop-width) {
+        background-image: url("../img/desktop/main/iphone screen-1.png");
+        height: 547px;
+        background-position: 50% 59px;
+        right: 0;
+        left: 0;
+      }
     }
 
     &::before {
@@ -108,11 +139,24 @@
         right: 0;
         left: 0;
       }
+
+      @media (min-width: $desktop-width) {
+        background-image: url("../img/desktop/main/iphone.png");
+        height: 547px;
+        background-position: 50% 59px;
+        right: 0;
+        left: 0;
+      }
     }
 
     @media (min-width: $tablet-width) {
       width: 336px;
       height: 543px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 500px;
+      height: 700px;
     }
   }
 }
