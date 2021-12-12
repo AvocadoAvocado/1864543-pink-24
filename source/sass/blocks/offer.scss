@@ -90,6 +90,7 @@
   &__wrapper-image {
     border: 3px solid #000000;
     margin: -3px;
+
     @media (min-width: $desktop-width) {
       display: flex;
       height: 382px;
