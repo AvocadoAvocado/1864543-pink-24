@@ -1,10 +1,6 @@
 .page-footer {
   text-align: center;
 
-  @media (min-width: $tablet-width) {
-    margin-top: 374px;
-  }
-
   &__wrapper {
     @media (min-width: $tablet-width) {
       display: flex;

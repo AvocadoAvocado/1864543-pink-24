@@ -25,18 +25,18 @@
 
   &__toggle {
     fill: #ffffff;
+    justify-self: end;
 
     @media (min-width: $desktop-width) {
       display: none;
     }
   }
 
-  &__wrapper {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+  &__list {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @media (min-width: $desktop-width) {
       display: flex;
@@ -47,4 +47,3 @@
     }
   }
 }
-
