@@ -1,12 +1,16 @@
 .main-nav {
   grid-column: span 2;
 
+  @media (min-width: $desktop-width) {
+    grid-column: auto;
+  }
+
   &__link {
     font-family: $font-face;
     line-height: 32px;
     font-weight: $font-bold;
     text-align: center;
-    color: #ffffff;
+    color: $fff;
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px;
@@ -26,7 +30,7 @@
   }
 
   &__toggle {
-    fill: #ffffff;
+    fill: $fff;
     justify-self: end;
     padding-right: 15px;
     padding-bottom: 10px;
@@ -39,7 +43,7 @@
   &__list {
     display: flex;
     flex-direction: column;
-    background-color: #283645;
+    background-color: $darkgrey;
     box-shadow: 0 1px 0 #000000;
     align-items: stretch;
     position: absolute;
@@ -53,6 +57,8 @@
       align-items: center;
       justify-content: flex-end;
       grid-column: auto;
+      position: relative;
+      background-color: transparent;
     }
   }
 

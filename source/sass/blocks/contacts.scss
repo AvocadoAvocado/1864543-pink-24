@@ -13,11 +13,12 @@
 
   &::after {
     content: "";
-    background-image: url("../img/mobile/main/triangle white footer.svg");
+    background-image: url("../img/mobile/main/triangle-white-footer.svg");
     background-repeat: no-repeat;
     position: absolute;
     right: 0;
     left: 0;
+    bottom: 167px;
     width: 1200px;
     height: 40px;
     z-index: 0;
@@ -26,19 +27,21 @@
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
-      background-image: url("../img/tablet/main/triangle white footer.svg");
+      background-image: url("../img/tablet/main/triangle-white-footer.svg");
       width: 1200px;
       height: 160px;
       background-position: 0 100%;
+      bottom: 305px;
     }
 
     @media (min-width: $desktop-width) {
       content: "";
       position: absolute;
-      background-image: url("../img/desktop/main/triangle white footer.svg");
+      background-image: url("../img/desktop/main/triangle-white-footer.svg");
       width: 1439px;
       height: 123px;
       background-position: 0 100%;
+      bottom: 450px;
     }
   }
 
@@ -116,55 +119,30 @@
   }
 
   &__container-map {
-    position: relative;
-    height: 200px;
     width: 320px;
     margin-top: 44px;
+    background-image: url("../img/mobile/main/map.png");
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    height: 200px;
+    z-index: 0;
 
     @media (min-width: $tablet-width) {
       height: 374px;
       width: 660px;
       margin-top: 55px;
+      background-image: url("../img/tablet/main/map.png");
+      background-repeat: no-repeat;
+      background-position: 0 100%;
     }
 
     @media (min-width: $desktop-width) {
       height: 502px;
       width: 1200px;
       margin-top: 65px;
-    }
-
-    &::before {
-      content: "";
-      background-image: url("../img/mobile/main/map.png");
+      background-image: url("../img/desktop/main/map.png");
       background-repeat: no-repeat;
       background-position: 0 100%;
-      position: absolute;
-      right: 0;
-      left: 0;
-      height: 200px;
-      z-index: 0;
-
-      @media (min-width: $tablet-width) {
-        content: "";
-        background-image: url("../img/tablet/main/map.png");
-        background-repeat: no-repeat;
-        background-position: 0 100%;
-        position: absolute;
-        right: 0;
-        left: 0;
-        height: 374px;
-      }
-
-      @media (min-width: $desktop-width) {
-        content: "";
-        background-image: url("../img/desktop/main/map.png");
-        background-repeat: no-repeat;
-        background-position: 0 100%;
-        position: absolute;
-        right: 0;
-        left: 0;
-        height: 502px;
-      }
     }
   }
 }

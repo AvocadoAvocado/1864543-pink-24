@@ -4,7 +4,7 @@
   &__container-title {
     padding-top: 11px;
     padding-bottom: 30px;
-    background-color: #ffffff;
+    background-color: $fff;
   }
 
   &__title {
@@ -44,21 +44,21 @@
   }
 
   &__container-content {
-    background-image: url("../img/mobile/main/grey background.png");
+    background-image: url("../img/mobile/main/grey-background.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 828px;
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/tablet/main/grey background.png");
+      background-image: url("../img/tablet/main/grey-background.png");
       display: flex;
       justify-content: center;
       height: 695px;
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url("../img/desktop/main/grey background.png");
+      background-image: url("../img/desktop/main/grey-background.png");
       padding: 0 252px;
       display: flex;
       flex-direction: column;
@@ -133,7 +133,7 @@
 
     &::after {
       content: "";
-      background-image: url("../img/mobile/main/iphone screen-3.png");
+      background-image: url("../img/mobile/main/iphone-screen3.png");
       background-repeat: no-repeat;
       position: absolute;
       background-position: 50% 0;
@@ -143,7 +143,7 @@
       left: 0;
 
       @media (min-width: $tablet-width) {
-        background-image: url("../img/tablet/main/iphone screen-3.png");
+        background-image: url("../img/tablet/main/iphone-screen3.png");
         height: 421px;
         background-position: 50% 0;
         bottom: 0;
@@ -152,7 +152,7 @@
       }
 
       @media (min-width: $desktop-width) {
-        background-image: url("../img/desktop/main/iphone screen-3.png");
+        background-image: url("../img/desktop/main/iphone-screen3.png");
         height: 547px;
         background-position: 50% 91px;
         right: 0;
@@ -171,7 +171,7 @@
       left: 0;
 
       @media (min-width: $tablet-width) {
-        background-image: url("../img/tablet/main/iphone 3.png");
+        background-image: url("../img/tablet/main/iphone-3.png");
         height: 547px;
         background-position: 50% 59px;
         right: 0;
