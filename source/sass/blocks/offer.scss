@@ -3,7 +3,6 @@
 
   &__container-title {
     padding-top: 11px;
-    padding-bottom: 30px;
     background-color: $fff;
   }
 
@@ -46,15 +45,15 @@
   &__container-content {
     background-image: url("../img/mobile/main/grey-background.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
-    height: 828px;
+    padding-top: 62px;
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/tablet/main/grey-background.png");
       display: flex;
       justify-content: center;
-      height: 695px;
+      padding-top: 62px;
     }
 
     @media (min-width: $desktop-width) {
@@ -62,7 +61,7 @@
       padding: 0 252px;
       display: flex;
       flex-direction: column;
-      height: 715px;
+      padding-top: 62px;
     }
   }
 
@@ -82,7 +81,7 @@
   }
 
   &__item {
-    margin: 43px 0;
+    margin: 40px 0;
 
     @media (min-width: $tablet-width) {
       margin: 23px 0 0 0;
