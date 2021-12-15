@@ -8,7 +8,7 @@
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
-    color: #d22856;
+    color: $pink;
     display: block;
   }
 
@@ -38,11 +38,11 @@
   }
 
   &__symbol {
-    color: #d22856;
+    color: $pink;
   }
 
   &__row {
-    background-color: $base-bg-color;
+    background-color: $lightgrey;
   }
 
   &__title {
@@ -50,7 +50,7 @@
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
-    color: #d22856;
+    color: $pink;
   }
 
   &__item {
@@ -68,7 +68,7 @@
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
-    color: #d22856;
+    color: $pink;
   }
 
   &__feeling-text {

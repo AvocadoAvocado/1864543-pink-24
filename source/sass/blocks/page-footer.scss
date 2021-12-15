@@ -1,0 +1,38 @@
+.page-footer {
+  text-align: center;
+
+  &__wrapper {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      align-items: center;
+      min-height: 120px;
+    }
+  }
+
+  &__logo {
+    padding-top: 40px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__social-link {
+    fill: $pink;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
