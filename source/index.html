@@ -217,95 +217,49 @@
     </section>
     <section class="price">
       <h2 class="visually-hidden">Прайс</h2>
-      <div class="price__wrapper" slider>
-        <dl class="price__list clean">
-          <div class="price__title">
-            <dd class="price__description">Розовый фильтр</dd>
-            <dd class="price__description">Смайлики</dd>
-            <dd class="price__description">Комментарии</dd>
-          </div>
-          <div class="price__item">
-            <dt class="description">
-              <span class="description__plan">база</span>
-              <span class="description__price">1,99 USD</span>
-            </dt>
-            <dd class="price__availability">
-              <svg width="31" height="21">
-                <use></use>
-              </svg>
-              <span class="visually-hidden">Да</span>
-            </dd>
-            <dd class="price__availability">
-              <svg width="27" height="27">
-                <use></use>
-              </svg>
-              <span class="visually-hidden">Нет</span>
-            </dd>
-            <dd class="price__availability">
-              <svg width="27" height="27">
-                <use></use>
-              </svg>
-              <span class="visually-hidden">Нет</span>
-            </dd>
-          </div>
+      <table class="price__table">
+        <thead class="price__page-thead">
+          <tr>
+          <th class="price__title--empty-cell"></th>
+          <th class="price__title price__title-invisible">
+            <p class="description__plan">База</p>
+            <span class="description__price">1,99 USD</span>
+          </th>
 
-          <div class="price__item slider__list">
-            <dt class="description">
-              <span class="description__plan">стандарт</span>
-              <span class="description__price">3,99 USD</span>
-              <span>хит</span>
-            </dt>
-            <dd class="price__availability">
-              <svg width="31" height="21">
-                <use></use>
-              </svg>
-              <span class="visually-hidden">Да</span>
-            </dd>
-            <dd class="price__availability">
-              <svg width="31" height="21">
-                <use></use>
-              </svg>
-              <span class="visually-hidden">Да</span>
-            </dd>
-            <dd class="price__availability">
-              <svg width="27" height="27">
-                <use></use>
-              </svg>
-              <span class="visually-hidden">Нет</span>
-            </dd>
-          </div>
+          <th class="price__title">
+            <p class="description__plan">Стандарт</p>
+            <span class="description__price">1,99 USD</span>
+          </th>
 
-          <div class="price__item">
-            <dt class="description">
-              <span class="description__plan">анлим</span>
-              <span class="description__price">9,99 USD</span>
-            </dt>
-            <dd class="price__availability">
-              <svg width="31" height="21">
-                <use></use>
-              </svg>
-              <span class="visually-hidden">Да</span>
-            </dd>
-            <dd class="price__availability">
-              <svg width="31" height="21">
-                <use></use>
-              </svg>
-              <span class="visually-hidden">Да</span>
-            </dd>
-            <dd class="price__availability">
-              <svg width="31" height="21">
-                <use></use>
-              </svg>
-              <span class="visually-hidden">Да</span>
-            </dd>
-          </div>
-        </dl>
-        <p class="price__toggles slider__toggles clean">
-          <button class="slider__toggle clean" type="button">1</button>
-          <button class="slider__toggle slider__toggle--current clean" type="button">2</button>
-          <button class="slider__toggle clean" type="button">3</button>
-        </p>
-      </div>
+          <th class="price__title price__title-invisible">
+            <p class="description__plan">Анлим</p>
+            <span class="description__price">1,99 USD</span>
+          </th>
+          </tr>
+        </thead>
+        <tbody сlass="price__page-tbody">
+          <tr class="price__row">
+            <td class="price__description">Розовый фильтр</td>
+            <td class="price__availability price__availability-invisible">х</td>
+            <td class="price__availability">х</td>
+            <td class="price__availability price__availability-invisible">х</td>
+          </tr>
+
+          <tr class="price__row">
+            <td class="price__description">Смайлики</td>
+            <td class="price__availability price__availability-invisible">х</td>
+            <td class="price__availability">х</td>
+            <td class="price__availability price__availability-invisible">х</td>
+          </tr>
+
+          <tr class="price__row">
+            <td class="price__description">Комментарии</td>
+            <td class="price__availability price__availability-invisible">х</td>
+            <td class="price__availability">х</td>
+            <td class="price__availability price__availability-invisible">х</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     <section class="contacts">
       <h2 class="contacts__title clean">Остались вопросы? Свяжитесь с нами!</h2>

@@ -1,9 +1,22 @@
 .price {
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
+  &__title-invisible {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: table-cell;
+    }
+  }
+
+  &__availability-invisible {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: table-cell;
+    }
+  }
+
+  &__availability {
+    text-align: center;
   }
 
   &__title {
@@ -11,5 +24,17 @@
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
+    background-color: $darkgrey;
+  }
+
+  @media (min-width: $tablet-width) {
+    &__table {
+      width: 100%;
+      padding: 0 15px;
+    }
+
+    &__title--empty-cell {
+      background-color: transparent;
+    }
   }
 }
