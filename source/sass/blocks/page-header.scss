@@ -4,6 +4,7 @@
   position: relative;
   background-image: url("../img/mobile/header/back-mobile.png");
   background-repeat: no-repeat;
+  background-position: 50% 0;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/tablet/header/back-tablet.png");
@@ -13,6 +14,10 @@
   @media (min-width: $desktop-width) {
     background-image: url("../img/desktop/header/back-desktop.png");
     height: 855px;
+  }
+
+  &--form {
+    height: 256px;
   }
 
   &__logotype--mobile {
@@ -59,7 +64,7 @@
     height: 320px;
     //margin: -3px;
     position: absolute;
-    top: 160px;
+    top: 142px;
     left: 0;
     z-index: 1;
 
@@ -134,68 +139,11 @@
     //background-image: url("../img/mobile/header/back-mobile.png");
     background-repeat: no-repeat;
     background-position: 50% 0;
-    border: 3px solid #f34d4d;
-    margin: -3px;
     position: relative;
     z-index: 3;
-
-    /* @media (min-width: $tablet-width) {
-      background-image: url("../img/tablet/header/back tablet.png");
-      height: 729px;
-    }
-
-    &::before {
-      content: "";
-      background-image: url("../img/mobile/header/screen.png");
-      background-position: 50% 0;
-      background-repeat: no-repeat;
-      position: absolute;
-      bottom: 57px;
-      right: 0;
-      left: 0;
-      height: 197px;
-      z-index: 0;
-
-      @media (min-width: $tablet-width) {
-        content: "";
-        background-image: url("../img/tablet/header/screen.png");
-        height: 346px;
-        background-position: 100% 0;
-        background-repeat: no-repeat;
-        position: absolute;
-        bottom: 146px;
-        right: 95px;
-      }
-    }
-
-    &::after {
-      content: "";
-      background-image: url("../img/mobile/header/phone.png");
-      background-position: 50% 0;
-      background-repeat: no-repeat;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      height: 286px;
-      z-index: 1;
-
-      @media (min-width: $tablet-width) {
-        content: "";
-        background-image: url("../img/tablet/header/phone.png");
-        height: 545px;
-        background-position: 100% 0;
-        background-repeat: no-repeat;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-      }
-    }*/
   }
 
   &__container-nav {
-    border: 3px solid #95db23;
-    margin: -3px;
     display: grid;
     margin-bottom: 29px;
     align-items: center;
@@ -241,8 +189,6 @@
   }
 
   &__container-content {
-    border: 3px solid #ff2fba;
-    margin: -3px;
     padding: 0 20px;
 
     @media (min-width: $tablet-width) {
@@ -257,8 +203,6 @@
   }
 
   &__container-download {
-    border: 3px solid #2b8ac9;
-    margin: -3px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
