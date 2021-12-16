@@ -1,6 +1,6 @@
 .contest-form {
   &__name-user {
-    padding: 55px 20px;
+    padding: 55px 20px 0;
   }
 
   &__form-label {
@@ -20,6 +20,11 @@
     padding: 23px 78px 23px 20px;
   }
 
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__button {
     background-color: #2aab6d;
     color: #ffffff;
@@ -28,9 +33,12 @@
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
+    margin-top: 52px;
   }
 
   &__text {
+    margin-top: 46px;
+    text-align: center;
     font-weight: $font-normal;
     font-size: 14px;
     line-height: 30px;
@@ -43,6 +51,8 @@
 
   &__row {
     background-color: $lightgrey;
+    padding: 23px 20px 50px;
+    margin-bottom: 30px;
   }
 
   &__title {
@@ -51,10 +61,17 @@
     line-height: 18px;
     text-transform: uppercase;
     color: $pink;
+    padding-top: 93px;
+    text-align: center;
   }
 
   &__item {
     padding-top: 10px;
+  }
+
+  &__contacts-user {
+    margin-top: 49px;
+    padding: 0 20px;
   }
 
   &__apps {
@@ -69,6 +86,11 @@
     line-height: 18px;
     text-transform: uppercase;
     color: $pink;
+    text-align: center;
+  }
+
+  &__feeling-group {
+    padding: 0 20px;
   }
 
   &__feeling-text {
@@ -77,5 +99,6 @@
     font-size: 18px;
     line-height: 30px;
     padding: 22px 20px;
+    width: 276px;
   }
 }
