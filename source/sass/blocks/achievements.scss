@@ -2,4 +2,30 @@
   font-weight: $font-normal;
   font-size: 18px;
   line-height: 30px;
+  position: relative;
+  display: flex;
+  padding-left: 75px;
+  align-items: center;
+
+  &__input[type="checkbox"]:checked + &__mark::before {
+    background-image: url("../img/mobile/main/tick.svg");
+  }
+
+  &__mark {
+    position: absolute;
+    left: 3px;
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    border-radius: 4px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 39px;
+      height: 36px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 }

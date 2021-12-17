@@ -65,6 +65,8 @@
     background-color: $lightgrey;
     padding: 23px 20px 50px;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
   }
 
   &__title {
@@ -79,6 +81,7 @@
 
   &__item {
     padding-top: 10px;
+    padding-bottom: 13px;
   }
 
   &__contacts-user {
@@ -94,6 +97,7 @@
     font-weight: $font-normal;
     font-size: 18px;
     line-height: 30px;
+    padding-left: 75px;
   }
 
   &__feeling-title {
