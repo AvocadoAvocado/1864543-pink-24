@@ -1,6 +1,16 @@
 .contest-form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+  }
+
   &__name-user {
     padding: 55px 20px 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
   }
 
   &__personal-information {
@@ -35,6 +45,13 @@
   &__container {
     display: flex;
     flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      order: 6;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   &__button {
@@ -67,6 +84,17 @@
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      order: 4;
+      background-color: $fff;
+    }
+
+    &--location {
+      @media (min-width: $tablet-width) {
+        order: 1;
+      }
+    }
   }
 
   &__title {
@@ -90,6 +118,13 @@
 
     @media (min-width: $tablet-width) {
       border: 2px solid $darkgrey;
+      order: 3;
+    }
+
+    &--location {
+      @media (min-width: $tablet-width) {
+        border: 2px solid $darkgrey;
+      }
     }
   }
 
@@ -111,6 +146,11 @@
 
   &__feeling-group {
     padding: 0 20px;
+
+    @media (min-width: $tablet-width) {
+      order: 4;
+      padding: 0;
+    }
   }
 
   &__feeling-text {
