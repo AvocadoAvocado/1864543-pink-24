@@ -11,7 +11,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 940px;
   }
 
   &__name-user {
@@ -19,6 +18,20 @@
 
     @media (min-width: $tablet-width) {
       padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-between;
+    }
+  }
+
+  &__personal {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -28,6 +41,12 @@
       flex-direction: row;
       align-items: center;
       padding-bottom: 56px;
+    }
+
+    @media (min-width: $desktop-width) {
+      &:last-child {
+        padding-bottom: 0;
+      }
     }
   }
 
@@ -40,7 +59,13 @@
     display: block;
 
     @media (min-width: $tablet-width) {
-      margin-right: 28px;
+      margin-left: 28px;
+    }
+
+    &--location {
+      @media (min-width: $tablet-width) {
+        order: 3;
+      }
     }
   }
 
@@ -53,6 +78,12 @@
 
     @media (min-width: $tablet-width) {
       flex-grow: 1;
+    }
+
+    &--location {
+      @media (min-width: $tablet-width) {
+        order: 1;
+      }
     }
   }
 
@@ -102,6 +133,7 @@
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
+    border: none;
 
     @media (min-width: $tablet-width) {
       order: 4;
@@ -109,6 +141,10 @@
       border: 2px solid  #e5e5e5;
       border-radius: 1px;
       padding: 23px 60px 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -122,6 +158,10 @@
       @media (min-width: $tablet-width) {
         order: 1;
         margin-top: 63px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-top: 0;
       }
     }
   }
@@ -148,6 +188,15 @@
         gap: 16px;
       }
     }
+
+    &--location {
+      @media (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+      }
+    }
   }
 
   &__item {
@@ -169,6 +218,10 @@
 
     @media (min-width: $desktop-width) {
       width: 940px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 44px 0;
     }
 
     &--location {
@@ -222,6 +275,7 @@
     font-size: 18px;
     line-height: 30px;
     padding: 22px 20px;
-    width: 276px;
+    width: 100%;
+    font-family: "Open Sans";
   }
 }
