@@ -1,0 +1,32 @@
+.apps {
+  &__input[type="radio"]:checked + &__mark::before {
+    position: absolute;
+    background-color: $pink;
+    width: 15px;
+    height: 15px;
+    content: "";
+    transform: translate(-50%, -50%);
+  }
+
+  &__mark {
+    position: absolute;
+    left: 17px;
+    width: 37px;
+    height: 37px;
+    background-color: $fff;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      border: 1px solid #e5e5e5;
+      left: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+    }
+  }
+}

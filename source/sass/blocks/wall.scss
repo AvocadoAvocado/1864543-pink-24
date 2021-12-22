@@ -1,6 +1,48 @@
 .wall {
+  margin: 0 20px;
+
+  &__number-likee {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__list {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: stretch;
+      justify-items: stretch;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      align-items: stretch;
+      justify-items: stretch;
+    }
+  }
+
   &__item {
     background-color: $lightgrey;
+    padding: 17px;
+    margin-bottom: 17px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+
+    &--row {
+      @media (min-width: $tablet-width) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      @media (min-width: $desktop-width) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+    }
   }
 
   &__container {
@@ -20,5 +62,10 @@
     line-height: 24px;
     text-transform: uppercase;
     color: $pink;
+  }
+
+  &__button-likee {
+    fill: $pink;
+    padding-right: 10px;
   }
 }
