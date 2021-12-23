@@ -1,5 +1,6 @@
 .page-footer {
   text-align: center;
+  padding-bottom: 40px;
 
   &__wrapper {
     @media (min-width: $tablet-width) {
@@ -24,6 +25,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 41px 0;
   }
 
   &__social-link {
