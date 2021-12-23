@@ -40,6 +40,16 @@
     line-height: 24px;
     color: #000000;
     margin-bottom: 24px;
+
+    @media (min-width: $desktop-width) {
+      padding: 0 43px;
+    }
+  }
+
+  &__description {
+    @media (min-width: $desktop-width) {
+      margin: 0 20px;
+    }
   }
 
   &__container-content {
@@ -74,7 +84,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 696px;
+      width: 100%;
       display: flex;
       flex-direction: row;
     }
@@ -86,16 +96,13 @@
     @media (min-width: $tablet-width) {
       margin: 23px 0 0 0;
     }
-
-    @media (min-width: $desktop-width) {
-      padding: 0 46px;
-    }
   }
 
   &__wrapper-image {
     @media (min-width: $desktop-width) {
       display: flex;
       height: 382px;
+      justify-content: center;
     }
   }
 
@@ -107,8 +114,6 @@
     }
 
     @media (min-width: $desktop-width) {
-      border: 3px solid #a02424;
-      margin: -3px;
       display: flex;
       flex-direction: row;
     }
@@ -179,6 +184,7 @@
         background-position: 50% 43px;
         right: 0;
         left: 0;
+        height: 384px;
       }
     }
   }

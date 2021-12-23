@@ -7,6 +7,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: auto;
+    padding-right: 130px;
   }
 
   &__link {
@@ -50,6 +51,7 @@
     position: absolute;
     right: 0;
     left: 0;
+    margin-top: 20px;
 
     @media (min-width: $desktop-width) {
       display: flex;
@@ -60,7 +62,6 @@
       grid-column: auto;
       position: relative;
       background-color: transparent;
-      margin-right: 130px;
     }
   }
 
@@ -69,6 +70,12 @@
     border-top: 1px solid #374a5c;
     border-bottom: 1px solid $black;
     padding: 8px 0;
+
+    @media (min-width: $desktop-width) {
+      border-top: none;
+      border-bottom: none;
+      padding-left: 20px;
+    }
   }
 
   &__toggle {
@@ -76,7 +83,6 @@
     justify-self: end;
     cursor: pointer;
     border-radius: 0;
-    margin-right: 10px;
 
     &--opened {
       background-image: url("../img/mobile/header/close-menu-btn.svg");
