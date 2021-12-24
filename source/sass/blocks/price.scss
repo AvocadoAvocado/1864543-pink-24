@@ -1,10 +1,20 @@
 .price {
   @media (min-width: $tablet-width) {
-    padding: 0 20px;
+    padding: 150px 20px 58px;
+    background-image: url("../img/desktop/main/background.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin-top: 31px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 130px;
+    padding: 150px 130px 58px;
+    background-image: url("../img/desktop/main/background.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin-top: 31px;
   }
 
   &__title-invisible {

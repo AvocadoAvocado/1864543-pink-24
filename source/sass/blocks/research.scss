@@ -1,6 +1,16 @@
 .research {
   display: none;
 
+  &__container-image {
+    @media (min-width: $tablet-width) {
+      padding-right: 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 71px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
@@ -49,12 +59,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 252px;
+    padding: 0 120px;
+    padding-top: 66px;
     background-color: $lightgrey;
   }
 
   &__container-content {
     width: 310px;
+
+    @media (min-width: $desktop-width) {
+      flex-grow: 1;
+    }
   }
 
   &__title {
