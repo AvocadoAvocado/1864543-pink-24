@@ -18,6 +18,7 @@
     height: 328px;
     position: relative;
     padding: 0 20px;
+    margin-top: 53px;
 
     &__content {
       color: $pink;
@@ -62,12 +63,13 @@
     padding: 0 120px;
     padding-top: 66px;
     background-color: $lightgrey;
+    margin-top: 0;
   }
 
   &__container-content {
     width: 310px;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       flex-grow: 1;
     }
   }
