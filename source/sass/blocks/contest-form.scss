@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 85px 0;
+    margin: 85px 0 34px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -32,6 +32,7 @@
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: column;
+      margin: 41px 60px;
     }
   }
 
@@ -41,9 +42,7 @@
       flex-direction: row;
       align-items: center;
       padding-bottom: 56px;
-    }
 
-    @media (min-width: $desktop-width) {
       &:last-child {
         padding-bottom: 0;
       }
@@ -59,12 +58,13 @@
     display: block;
 
     @media (min-width: $tablet-width) {
-      margin-left: 28px;
+      margin-right: 20px;
     }
 
     &--location {
       @media (min-width: $tablet-width) {
         order: 3;
+        margin: 5px 0 0 20px;
       }
     }
   }
@@ -98,6 +98,7 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      margin-top: 52px;
     }
 
     @media (min-width: $desktop-width) {
@@ -114,6 +115,10 @@
     line-height: 30px;
     text-transform: uppercase;
     margin-top: 52px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+    }
   }
 
   &__text {
@@ -123,6 +128,14 @@
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
   }
 
   &__symbol {
@@ -153,6 +166,7 @@
       &--flex-container {
         display: flex;
         flex-direction: row;
+        margin: 64px 0;
       }
     }
 
@@ -179,7 +193,8 @@
     transform: translateY(100%);
 
     @media (min-width: $tablet-width) {
-      padding-top: 0;
+      transform: none;
+      padding: 0 14px;
     }
 
     &--contacts {
@@ -196,16 +211,25 @@
       margin-top: 60px;
     }
 
+    @media (min-width: $tablet-width) {
+      margin-top: 13px;
+    }
+
     @media (min-width: $desktop-width) {
       &--part1 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 16px;
+        margin-top: 25px;
       }
     }
 
     &--location {
       margin-top: 54px;
+
+      @media (min-width: $tablet-width) {
+        margin-top: 12px;
+      }
 
       @media (min-width: $desktop-width) {
         display: flex;
@@ -237,8 +261,8 @@
       width: 940px;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      margin: 44px 0;
+      justify-content: center;
+      margin: 44px 0 0;
     }
 
     &--location {
