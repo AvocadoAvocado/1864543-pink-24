@@ -47,6 +47,10 @@
         padding-bottom: 0;
       }
     }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 38px;
+    }
   }
 
   &__form-label {
@@ -85,6 +89,30 @@
     &--location {
       @media (min-width: $tablet-width) {
         order: 1;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &__box-icon {
+      position: relative;
+
+      &::before {
+        background-repeat: no-repeat;
+        position: absolute;
+        display: block;
+      }
+
+      &--phone::before {
+        background-image: url("../img/tablet/main/phone-icon-form.svg");
+        width: 19px;
+        height: 20px;
+      }
+
+      &--mail::before {
+        background-image: url("../img/tablet/main/mail-icon-form.svg");
+        width: 18px;
+        height: 13px;
       }
     }
   }
@@ -131,10 +159,6 @@
 
     @media (min-width: $tablet-width) {
       margin-top: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin: 0;
     }
   }
 
@@ -236,6 +260,7 @@
         flex-direction: column;
         align-items: stretch;
         justify-content: space-between;
+        height: 100%;
       }
     }
   }
