@@ -74,7 +74,9 @@
     font-size: 18px;
     line-height: 30px;
     border: 2px solid $e5;
-    padding: 23px 78px 23px 20px;
+    padding: 23px 20px;
+    width: 100%;
+    box-sizing: border-box;
 
     @media (min-width: $tablet-width) {
       flex-grow: 1;
@@ -129,8 +131,8 @@
 
   &__row {
     background-color: $lightgrey;
-    padding: 23px 20px 50px;
-    margin-bottom: 30px;
+    padding: 0 20px 45px;
+    margin: 9px 0 44px;
     display: flex;
     flex-direction: column;
     border: none;
@@ -172,15 +174,28 @@
     line-height: 18px;
     text-transform: uppercase;
     color: $pink;
-    padding-top: 93px;
     text-align: center;
+    padding-top: 15px;
+    transform: translateY(100%);
 
     @media (min-width: $tablet-width) {
       padding-top: 0;
     }
+
+    &--contacts {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+      }
+    }
   }
 
   &__list {
+    &--part1 {
+      margin-top: 60px;
+    }
+
     @media (min-width: $desktop-width) {
       &--part1 {
         display: grid;
@@ -190,6 +205,8 @@
     }
 
     &--location {
+      margin-top: 54px;
+
       @media (min-width: $desktop-width) {
         display: flex;
         flex-direction: column;
@@ -276,5 +293,7 @@
     line-height: 30px;
     padding: 22px 20px;
     width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
   }
 }
