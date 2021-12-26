@@ -24,6 +24,21 @@
       line-height: 18px;
       text-transform: capitalize;
     }
+
+    &--active {
+      position: relative;
+      padding-bottom: 8px;
+    }
+
+    &--active::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      background: $fff;
+    }
   }
 
   &__link--html {
@@ -74,7 +89,13 @@
     @media (min-width: $desktop-width) {
       border-top: none;
       border-bottom: none;
-      padding-left: 79px;
+      padding: 10px 9px 6px;
+      margin: 0 22px;
+    }
+
+    &:last-child {
+      padding: 10px 0 6px;
+      margin: 0;
     }
   }
 
