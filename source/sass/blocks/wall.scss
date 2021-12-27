@@ -1,6 +1,10 @@
 .wall {
   margin: 0 20px;
 
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+
   &__number-likee {
     display: flex;
     flex-direction: row;

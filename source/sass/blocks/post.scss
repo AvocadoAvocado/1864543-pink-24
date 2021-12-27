@@ -1,7 +1,7 @@
 .post {
   &__form-editor {
     background-color: $lightgrey;
-    padding: 0 20px;
+    padding: 30px 20px 41px;
 
     @media (min-width: $tablet-width) {
       display: flex;
@@ -11,7 +11,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 40px 0;
+      padding: 40px 20px;
     }
   }
 
@@ -26,7 +26,11 @@
     border-top-color: rgba(42, 43, 44, 0.3);
     margin-top: 10px;
     padding-top: 15px;
-    padding-bottom: 41px;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   &__button-reset {
@@ -37,5 +41,9 @@
     border: 3px solid rgba(42, 43, 44, 0.3);
     color: $darkgrey;
     opacity: 30%;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
   }
 }
