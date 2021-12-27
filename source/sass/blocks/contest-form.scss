@@ -41,9 +41,11 @@
     }
 
     @media (min-width: $desktop-width) {
-      &:first-child {
-        margin-left: 50px;
-      }
+      margin: 0;
+    }
+
+    &--phone {
+      margin-right: 50px;
     }
   }
 
