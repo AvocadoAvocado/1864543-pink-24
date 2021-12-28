@@ -30,20 +30,23 @@
     @media (min-width: $desktop-width) {
       display: flex;
       flex-direction: row;
+      justify-content: space-around;
     }
   }
 
   &__button-reset {
     margin-top: 15px;
     display: block;
-    padding: 15px 103px 15px 104px;
     border-radius: 30px;
     border: 3px solid rgba(42, 43, 44, 0.3);
     color: $darkgrey;
     opacity: 30%;
+    text-align: center;
+    padding: 12px 0;
 
     @media (min-width: $desktop-width) {
       margin-top: 0;
+      padding: 0 55px;
     }
   }
 }

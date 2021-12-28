@@ -10,11 +10,19 @@
       font-size: 18px;
       line-height: 30px;
       padding: 0 112px;
+      margin-bottom: 74px;
     }
 
     @media (min-width: $desktop-width) {
-      margin: 0;
-      padding: 0 23px;
+      margin: 0 0 97px 0;
+      padding: 0 162px;
+    }
+
+    &--appeal {
+      @media (min-width: $desktop-width) {
+        padding: 0 277px;
+        margin-top: 67px;
+      }
     }
 
     &--form {
