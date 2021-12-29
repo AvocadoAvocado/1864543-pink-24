@@ -19,6 +19,10 @@ body {
   border: 3px solid $pink;
   border-radius: 57px;
   padding: 13px 90px;
+
+  @media (min-width: $desktop-width) {
+    padding: 13px 40px;
+  }
 }
 
 .clean {

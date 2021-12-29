@@ -82,7 +82,7 @@
           </li>
 
           <li class="main-nav__item">
-            <a class="main-nav__link clean" href="form.html">конкурс</a>
+            <a class="main-nav__link main-nav__link--active clean" href="form.html">конкурс</a>
           </li>
 
           <li class="main-nav__item">
@@ -131,7 +131,8 @@
           <ul class="contest-form__list--part1 clean">
             <li class="contest-form__item">
               <label class="achievements clean">
-                <input class="visually-hidden achievements__input clean" type="checkbox" name="shark" checked>Сделал селфи с акулой
+                <input class="visually-hidden achievements__input clean" type="checkbox" name="shark" checked>Сделал
+                селфи с акулой
                 <span class="achievements__mark"></span>
               </label>
             </li>
@@ -178,44 +179,51 @@
         </fieldset>
 
         <fieldset class="contest-form__contacts-user clean">
-          <legend class="contest-form__title">контактная информация</legend>
-          <p class="contest-form__personal clean">
+          <legend class="contest-form__title contest-form__title--contacts">контактная информация</legend>
+          <p class="contest-form__personal contest-form__personal--phone clean">
             <label class="contest-form__form-label contest-form__form-label--location clean" for="contacts--phone">
               Номер телефона
             </label>
-            <input class="contest-form__field contest-form__field--location clean" type="text" id="contacts--phone" name="contacts--phone"
-              placeholder="Номер, пожалуйста">
+            <span class="contest-form__box-icon contest-form__box-icon--phone">
+              <input class="contest-form__field contest-form__field--location clean" type="text" id="contacts--phone"
+                name="contacts--phone" placeholder="Номер, пожалуйста">
+            </span>
           </p>
 
           <p class="contest-form__personal clean">
             <label class="contest-form__form-label contest-form__form-label--location clean" for="contacts--mail">
               Адрес почты
             </label>
-            <input class="contest-form__field contest-form__field--location clean" type="text" id="contacts--mail" name="contacts--mail" required
-              placeholder="Введите почту *">
+            <span class="contest-form__box-icon contest-form__box-icon--mail">
+              <input class="contest-form__field contest-form__field--location clean" type="text" id="contacts--mail"
+                name="contacts--mail" required placeholder="Введите почту *">
+            </span>
           </p>
         </fieldset>
 
         <fieldset class="contest-form__row contest-form__row--location clean">
-          <legend class="contest-form__title">С каким приложением путешествовали?</legend>
+          <legend class="contest-form__title clean">С каким приложением путешествовали?</legend>
           <ul class="contest-form__list contest-form__list--location clean">
-            <li class="contest-form__item">
+            <li class="contest-form__item clean">
               <label class="contest-form__apps clean">
-                <input class="visually-hidden apps__input clean" name="type-group" type="radio" value="iOS" checked>Pink для iOS
+                <input class="visually-hidden apps__input clean" name="type-group" type="radio" value="iOS" checked>Pink
+                для iOS
                 <span class="apps__mark"></span>
               </label>
             </li>
 
-            <li class="contest-form__item">
+            <li class="contest-form__item clean">
               <label class="contest-form__apps clean">
-                <input class="visually-hidden apps__input clean" name="type-group" type="radio" value="Android">Pink на Android
+                <input class="visually-hidden apps__input clean" name="type-group" type="radio" value="Android">Pink на
+                Android
                 <span class="apps__mark"></span>
               </label>
             </li>
 
-            <li class="contest-form__item">
+            <li class="contest-form__item clean">
               <label class="contest-form__apps clean">
-                <input class="visually-hidden apps__input clean" name="type-group" type="radio" value="WindowsPhone">Windows Phone
+                <input class="visually-hidden apps__input clean" name="type-group" type="radio"
+                  value="WindowsPhone">Windows Phone
                 <span class="apps__mark"></span>
               </label>
             </li>
@@ -225,8 +233,8 @@
         <fieldset class="contest-form__feeling-group clean">
           <legend class="contest-form__feeling-title">Опишите свои эмоции</legend>
           <label class="visually-hidden clean" for="feeling">Опишите свои эмоции</label>
-          <textarea class="contest-form__feeling-text clean" id="feeling" name="feeling" rows="5"
-            cols="40">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <textarea class="contest-form__feeling-text clean" id="feeling" name="feeling"
+            rows="5">Можно прям в красках, не стесняясь в выражениях</textarea>
         </fieldset>
         <div class="contest-form__container">
           <button class="contest-form__button clean" type="submit">Отправить форму</button>

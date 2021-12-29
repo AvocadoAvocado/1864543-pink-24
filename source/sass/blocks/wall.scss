@@ -1,9 +1,19 @@
 .wall {
   margin: 0 20px;
 
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+
   &__number-likee {
     display: flex;
     flex-direction: row;
+  }
+
+  &__button-nike {
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
   }
 
   &__list {
@@ -62,6 +72,10 @@
     line-height: 24px;
     text-transform: uppercase;
     color: $pink;
+
+    @media (min-width: $tablet-width) {
+      flex-grow: 1;
+    }
   }
 
   &__button-likee {

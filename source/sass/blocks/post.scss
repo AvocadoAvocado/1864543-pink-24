@@ -1,6 +1,7 @@
 .post {
   &__form-editor {
     background-color: $lightgrey;
+    padding: 30px 20px 41px;
 
     @media (min-width: $tablet-width) {
       display: flex;
@@ -10,7 +11,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 40px 0;
+      padding: 40px 20px;
     }
   }
 
@@ -25,15 +26,27 @@
     border-top-color: rgba(42, 43, 44, 0.3);
     margin-top: 10px;
     padding-top: 15px;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 
   &__button-reset {
     margin-top: 15px;
     display: block;
-    padding: 15px 103px 15px 104px;
     border-radius: 30px;
-    border: 3px solid #283645;
-    opacity: 10%;
-    color: #c2c5c9;
+    border: 3px solid rgba(42, 43, 44, 0.3);
+    color: $darkgrey;
+    opacity: 30%;
+    text-align: center;
+    padding: 12px 0;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+      padding: 0 55px;
+    }
   }
 }
