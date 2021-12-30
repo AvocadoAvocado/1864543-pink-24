@@ -32,6 +32,10 @@
     fill: $pink;
   }
 
+  &__logo:active &__logotype {
+    opacity: 30%;
+  }
+
   &__logotype--mobile {
 
     vertical-align: bottom;
@@ -65,7 +69,6 @@
     }
 
     @media (min-width: $desktop-width) {
-      fill: $fff;
       display: block;
     }
   }
