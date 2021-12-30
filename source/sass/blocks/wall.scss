@@ -34,9 +34,10 @@
   }
 
   &__item {
-    background-color: $lightgrey;
-    padding: 17px;
-    margin-bottom: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
@@ -53,6 +54,11 @@
         grid-column-end: 4;
       }
     }
+  }
+
+  &__content {
+    background-color: $lightgrey;
+    padding: 17px;
   }
 
   &__container {
