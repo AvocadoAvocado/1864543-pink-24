@@ -6,11 +6,18 @@
   &__number-likee {
     display: flex;
     flex-direction: row;
+
+    &--starting {
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
   }
 
   &__button-nike {
     @media (min-width: $tablet-width) {
       order: 2;
+      padding-left: 16px;
     }
   }
 
@@ -76,8 +83,20 @@
     }
   }
 
+  &__user {
+    display: flex;
+    flex-direction: row;
+  }
+
   &__container {
     display: flex;
+
+    &--starting {
+      @media (min-width: $tablet-width) {
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
   }
 
   &__time {
@@ -85,6 +104,11 @@
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 12px;
+      line-height: 24px;
+    }
   }
 
   &__button-descr {
