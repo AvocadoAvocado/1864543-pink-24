@@ -134,7 +134,7 @@
 
     &::after {
       content: "";
-      background-image: url("../img/mobile/main/iphone-screen3.png");
+      background-image: url("../img/mobile/main/iphone-screen3.jpg");
       background-repeat: no-repeat;
       position: absolute;
       background-position: 50% 0;
@@ -142,6 +142,11 @@
       bottom: 0;
       right: 0;
       left: 0;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/mobile/main/iphone-screen3-retina.jpg");
+        background-size: auto 100%;
+      }
 
       @media (min-width: $tablet-width) {
         background-image: url("../img/tablet/main/iphone-screen3.png");
@@ -170,6 +175,11 @@
       height: 283px;
       right: 0;
       left: 0;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/mobile/main/iphone-retina.png");
+        background-size: auto 100%;
+      }
 
       @media (min-width: $tablet-width) {
         background-image: url("../img/tablet/main/iphone-3.png");

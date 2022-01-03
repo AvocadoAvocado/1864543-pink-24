@@ -121,26 +121,35 @@
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/mobile/header/screen-retina.jpg");
+        background-size: auto 100%;
       }
 
       @media (min-width: $tablet-width) {
         content: "";
-        background-image: url("../img/tablet/header/screen.png");
+        background-image: url("../img/tablet/header/screen.jpg");
         height: 346px;
         background-position: 100% 0;
         position: absolute;
         bottom: 146px;
         right: 95px;
+
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background-image: url("../img/tablet/header/screen-retina.jpg");
+        }
       }
 
       @media (min-width: $desktop-width) {
         content: "";
-        background-image: url("../img/desktop/header/screen.png");
+        background-image: url("../img/desktop/header/screen.jpg");
         height: 408px;
         background-position: 100% 0;
         position: absolute;
         bottom: 173px;
         right: 249px;
+
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background-image: url("../img/desktop/header/screen-retina.jpg");
+        }
       }
     }
 
@@ -154,11 +163,20 @@
       height: 286px;
       z-index: 1;
 
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/mobile/header/phone-retina.png");
+        background-size: auto 100%;
+      }
+
       @media (min-width: $tablet-width) {
         content: "";
         background-image: url("../img/tablet/header/phone.png");
         background-position: 100% 0;
         height: 545px;
+
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background-image: url("../img/tablet/header/phone-retina.png");
+        }
       }
 
       @media (min-width: $desktop-width) {
@@ -166,6 +184,10 @@
         background-image: url("../img/desktop/header/phone.png");
         height: 645px;
         background-position: 100% 0;
+
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background-image: url("../img/desktop/header/phone-retina.png");
+        }
       }
     }
   }
