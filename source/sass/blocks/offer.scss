@@ -76,7 +76,7 @@
   }
 
   &__list {
-    padding: 23px 20px 27px;
+    padding: 23px 20px 0 27px;
 
     @media (min-width: $tablet-width) {
       width: 349px;
@@ -97,6 +97,9 @@
 
   &__item {
     margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @media (min-width: $tablet-width) {
       margin: 23px 0 0 0;
@@ -111,111 +114,47 @@
     }
   }
 
-  &__content-image {
-    position: relative;
-    height: 283px;
+  &__image-box {
+    order: 1;
+    background-image: url("../img/mobile/main/iphone.png");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    display: block;
+    padding: 38px 16px 0 17px;
+    background-size: 100%;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/mobile/main/iphone-retina.png");
+    }
 
     @media (min-width: $tablet-width) {
-      width: 336px;
-      height: 543px;
+      display: none;
     }
 
-    @media (min-width: $desktop-width) {
-      width: 250px;
+    &--mobile {
+      margin-top: 25px;
     }
+  }
 
-    &--screen-grayscale {
+  &__content-image {
+    &--desktop {
       display: none;
 
       @media (min-width: $desktop-width) {
         display: block;
       }
     }
+  }
 
-    &::after {
-      content: "";
-      background-image: url("../img/mobile/main/iphone-screen3.jpg");
-      background-repeat: no-repeat;
-      position: absolute;
-      background-position: 50% 0;
-      height: 245px;
-      bottom: 0;
-      right: 0;
-      left: 0;
+  &__image-tablet {
+    display: none;
 
-      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/mobile/main/iphone-screen3-retina.jpg");
-        background-size: auto 100%;
-      }
-
-      @media (min-width: $tablet-width) {
-        background-image: url("../img/tablet/main/iphone-screen3.jpg");
-        height: 421px;
-        background-position: 50% 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-
-        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-          background-image: url("../img/tablet/main/iphone-screen3-retina.jpg");
-          background-size: auto 100%;
-        }
-      }
-
-      @media (min-width: $desktop-width) {
-        background-image: url("../img/desktop/main/iphone-screen3.jpg");
-        height: 547px;
-        background-position: 50% 91px;
-        right: 0;
-        left: 0;
-
-        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-          background-image: url("../img/desktop/main/iphone-screen3-retina.jpg");
-          background-size: auto 100%;
-        }
-      }
+    @media (min-width: $tablet-width) {
+      display: block;
     }
 
-    &::before {
-      content: "";
-      background-image: url("../img/mobile/main/iphone.png");
-      background-repeat: no-repeat;
-      position: absolute;
-      background-position: 50% 0;
-      height: 283px;
-      right: 0;
-      left: 0;
-
-      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/mobile/main/iphone-retina.png");
-        background-size: auto 100%;
-      }
-
-      @media (min-width: $tablet-width) {
-        background-image: url("../img/tablet/main/iphone-3.png");
-        height: 547px;
-        background-position: 50% 59px;
-        right: 0;
-        left: 0;
-
-        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-          background-image: url("../img/tablet/main/iphone-retina.png");
-          background-size: auto 100%;
-        }
-      }
-
-      @media (min-width: $desktop-width) {
-        background-image: url("../img/desktop/main/iphone.png");
-        background-position: 50% 43px;
-        right: 0;
-        left: 0;
-        height: 384px;
-
-        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-          background-image: url("../img/desktop/main/iphone-retina.png");
-          background-size: auto 100%;
-        }
-      }
+    @media (min-width: $desktop-width) {
+      display: none;
     }
   }
 }
