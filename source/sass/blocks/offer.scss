@@ -110,6 +110,12 @@
       grid-template-columns: 1fr 1fr;
       gap: 20px;
     }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 
   &__wrapper-image {
@@ -123,6 +129,10 @@
   &__inner-box {
     @media (min-width: $tablet-width) {
       grid-column: 2/3;
+    }
+
+    @media (min-width: $desktop-width) {
+      order: 2;
     }
   }
 
@@ -147,6 +157,10 @@
       background-image: url("../img/tablet/main/iphone-retina.png");
     }
 
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/desktop/main/iphone.png");
+    }
+
     &--mobile {
       margin-top: 25px;
 
@@ -155,6 +169,12 @@
         position: absolute;
         bottom: 0;
         padding: 66px 16px 0 16px;
+      }
+
+      @media (min-width: $desktop-width) {
+        order: 1;
+        position: relative;
+        padding: 0;
       }
     }
   }
