@@ -166,6 +166,14 @@
       }
     }
 
+    &--visibility {
+      display: none;
+
+      @media (min-width: $desktop-width) {
+        display: block;
+      }
+    }
+
     &--mobile {
       margin-top: 25px;
 
