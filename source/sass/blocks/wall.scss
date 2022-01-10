@@ -1,6 +1,4 @@
 .wall {
-  margin: 0 20px;
-
   @media (min-width: $desktop-width) {
     margin: 0;
   }
@@ -8,21 +6,42 @@
   &__number-likee {
     display: flex;
     flex-direction: row;
+
+    &--mobile {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    &--starting {
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
   }
 
   &__button-nike {
     @media (min-width: $tablet-width) {
       order: 2;
+      padding-left: 16px;
     }
   }
 
   &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     @media (min-width: $tablet-width) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
+      display: flex;
       align-items: stretch;
       justify-items: stretch;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
 
     @media (min-width: $desktop-width) {
@@ -30,22 +49,33 @@
       gap: 20px;
       align-items: stretch;
       justify-items: stretch;
+      padding: 0 130px;
     }
   }
 
   &__item {
-    background-color: $lightgrey;
-    padding: 17px;
-    margin-bottom: 17px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 20px;
+    align-items: stretch;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 0;
+      max-width: 300px;
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
     }
 
     &--row {
+      margin: 0;
+
       @media (min-width: $tablet-width) {
         grid-column-start: 1;
         grid-column-end: 3;
+        margin: 0;
+        padding-bottom: 54px;
       }
 
       @media (min-width: $desktop-width) {
@@ -55,8 +85,50 @@
     }
   }
 
+  &__content {
+    background-color: $lightgrey;
+    padding: 17px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+      padding: 30px;
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 27px;
+    }
+
+    &--starting {
+      margin: 0 20px;
+
+      @media (min-width: $tablet-width) {
+        margin: 0 20px 50px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin: 0 130px;
+      }
+    }
+  }
+
+  &__user {
+    display: flex;
+    flex-direction: row;
+  }
+
   &__container {
     display: flex;
+
+    &--starting {
+      @media (min-width: $tablet-width) {
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
   }
 
   &__time {
@@ -64,6 +136,11 @@
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 12px;
+      line-height: 24px;
+    }
   }
 
   &__button-descr {
@@ -81,5 +158,9 @@
   &__button-likee {
     fill: $pink;
     padding-right: 10px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 0;
+    }
   }
 }

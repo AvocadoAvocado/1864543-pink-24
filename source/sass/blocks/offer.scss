@@ -76,7 +76,7 @@
   }
 
   &__list {
-    padding: 23px 20px 27px;
+    padding: 23px 20px 0 27px;
 
     @media (min-width: $tablet-width) {
       width: 349px;
@@ -84,6 +84,8 @@
       text-align: left;
       padding-top: 60px;
       flex-grow: 1;
+      position: relative;
+      margin-top: 59px;
     }
 
     @media (min-width: $desktop-width) {
@@ -97,9 +99,22 @@
 
   &__item {
     margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @media (min-width: $tablet-width) {
       margin: 23px 0 0 0;
+      flex-direction: row;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
 
@@ -111,20 +126,47 @@
     }
   }
 
-  &__content-image {
-    position: relative;
-    height: 283px;
-
+  &__inner-box {
     @media (min-width: $tablet-width) {
-      width: 336px;
-      height: 543px;
+      grid-column: 2/3;
     }
 
     @media (min-width: $desktop-width) {
-      width: 250px;
+      order: 2;
+    }
+  }
+
+  &__image-box {
+    order: 1;
+    background-image: url("../img/mobile/main/iphone.png");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    display: block;
+    padding: 38px 10px 0 10px;
+    background-size: 100%;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/mobile/main/iphone-retina.png");
     }
 
-    &--screen {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/tablet/main/iphone.png");
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/tablet/main/iphone-retina.png");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/desktop/main/iphone.png");
+      padding: 47px 11px 0 11px;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/desktop/main/iphone-retina.png");
+      }
+    }
+
+    &--visibility {
       display: none;
 
       @media (min-width: $desktop-width) {
@@ -132,60 +174,43 @@
       }
     }
 
-    &::after {
-      content: "";
-      background-image: url("../img/mobile/main/iphone-screen3.png");
-      background-repeat: no-repeat;
-      position: absolute;
-      background-position: 50% 0;
-      height: 245px;
-      bottom: 0;
-      right: 0;
-      left: 0;
+    &--mobile {
+      margin-top: 25px;
 
       @media (min-width: $tablet-width) {
-        background-image: url("../img/tablet/main/iphone-screen3.png");
-        height: 421px;
-        background-position: 50% 0;
+        margin-top: 0;
+        position: absolute;
         bottom: 0;
-        right: 0;
-        left: 0;
+        padding: 66px 16px 0 16px;
       }
 
       @media (min-width: $desktop-width) {
-        background-image: url("../img/desktop/main/iphone-screen3.png");
-        height: 547px;
-        background-position: 50% 91px;
-        right: 0;
-        left: 0;
+        order: 1;
+        position: relative;
+        padding: 47px 11px 0 11px;
       }
     }
+  }
 
-    &::before {
-      content: "";
-      background-image: url("../img/mobile/main/iphone.png");
-      background-repeat: no-repeat;
-      position: absolute;
-      background-position: 50% 0;
-      height: 283px;
-      right: 0;
-      left: 0;
-
-      @media (min-width: $tablet-width) {
-        background-image: url("../img/tablet/main/iphone-3.png");
-        height: 547px;
-        background-position: 50% 59px;
-        right: 0;
-        left: 0;
-      }
+  &__content-image {
+    &--desktop {
+      display: none;
 
       @media (min-width: $desktop-width) {
-        background-image: url("../img/desktop/main/iphone.png");
-        background-position: 50% 43px;
-        right: 0;
-        left: 0;
-        height: 384px;
+        display: block;
       }
+    }
+  }
+
+  &__image-tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
     }
   }
 }
