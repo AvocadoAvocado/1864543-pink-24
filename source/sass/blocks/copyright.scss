@@ -7,5 +7,13 @@
     fill: $pink;
     padding-left: 10px;
     padding-top: 10px;
+
+    &:hover {
+      fill: $black;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
   }
 }
