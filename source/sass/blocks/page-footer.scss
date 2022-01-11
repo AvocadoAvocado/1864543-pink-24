@@ -35,6 +35,25 @@
     margin: 41px 0;
   }
 
+  &__link-image {
+    fill: $pink;
+    padding: 0 6px;
+
+    &:active {
+      opacity: 30%;
+    }
+  }
+
+  &__link-text {
+    &:hover {
+      fill: $pink;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
+  }
+
   &__social-link {
     fill: $pink;
     border: 2px solid rgba(42, 43, 44, 0.3);
@@ -46,6 +65,14 @@
     height: 48px;
     align-items: center;
     justify-content: center;
+
+    &:hover {
+      border-color: $black;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
   }
 
   &__copyright {
